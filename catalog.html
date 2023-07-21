@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class=" scrollbar-type-1 sb-cyan">
+
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS9LZ9N5ZD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WS9LZ9N5ZD');
+    </script>
+    <title>Catalogue of Low-mass X-ray Binaries</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Francis Fortin, LMXB, binary, catalogue, APC, astrophysics, X-ray, infrared" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./pictures/favicon.ico">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      window.on_page_functions = [];
+    </script>
+
+    <!-- Metro UI JS-->
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <!-- Latex imports -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+  </head>
+  <body>
+
+
+  <script src="banner_menu.js"></script>
+
+
+    <div class="container" style="font-size:13px">
+      <div class="row flex-justify-between flex-nowrap ml-0 mr-0 mt-2">
+          <div class="cell-md-8">
+              <div id="table-search"></div>
+          </div>
+          <div class="no-wrap ml-1 row">
+              <div id="rows-count"></div>
+              <div id="table-actions" class="d-flex flex-align-center">
+                  <div class="dropdown-button">
+                      <button class="button"><span class="mif-more-horiz"></span></button>
+                      <ul class="d-menu context shadow-3" data-role="dropdown">
+                          <li><a href="#" onclick="$('#demo-table').data('table').export('CSV', 'all', 'export-all.csv')"><span class="mif-upload2 fg-cyan icon"></span> Export all</a></li>
+                          <li><a href="#" onclick="$('#demo-table').data('table').export('CSV', 'checked', 'export-checked.csv')"><span class="mif-upload2 fg-steel icon"></span> Export selected</a></li>
+                          <li><a href="#" onclick="$('#demo-table').data('table').export('CSV', 'view', 'export-view.csv')"><span class="mif-upload2 fg-brown icon"></span> Export current view</a></li>
+                      </ul>
+                  </div>
+
+                  <a onclick="$('#demo-table').data('table').toggleInspector()" class="button ml-1"><span class="mif-cog"></span></a>
+
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="container" style="opacity:0.6;font-size:13px"">
+      &nbsp;&nbsp; Query tip: any identifier known by Simbad will work !
+    </div>
+    <div class="container" style="font-size:13px">
+      <table id="demo-table"
+             class="table styled-table table-border striped row-hover mt-4 entities-table"
+             data-role="table"
+             data-source="./webcat_versions/v2023-07.json"
+             data-cls-table-top="row"
+             data-cls-search="cell-md-8"
+             data-table-search-title="Search LMXB:"
+             data-table-rows-count-title="Show:"
+             data-all-records-title="All LMXBs"
+             data-rows="10"
+             data-rows-steps="-1, 5, 10, 20, 50, 100"
+             data-info-wrapper="#table-info"
+             data-pagination-wrapper="#pagination"
+             data-rows-wrapper="#rows-count"
+             data-search-wrapper="#table-search"
+             data-inspector-title="Setup view"
+             data-view-save-mode="client"
+             data-horizontal-scroll="true"
+             data-check="true"
+             data-check-col-index="0"
+             data-check-store-key="MY_STORE_FOR_TABLE:$1"
+      ></table>
+    </div>
+
+    <!-- Import jquery to load json file that handles the keymapping of table headers -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <!-- this function takes care of the modifications to the table. it is called onload (see <body> tag) -->
+    <!-- <script type="text/javascript"> -->
+    <!--   function getHeader () { -->
+    <!--     let fetchRes = fetch("./keymaps.json"); -->
+    <!--       fetchRes.then(res => -->
+    <!--         res.json() -->
+    <!--       ).then(keymaps => { -->
+    <!--         var table = document.getElementById("demo-table"); -->
+    <!--         console.log(table) -->
+    <!--         headers = table.rows.item(0).cells; -->
+    <!--         for (var index = 2; index < headers.length; index++) { -->
+    <!--           var headerName = headers[index].innerHTML -->
+    <!--           if (headerName in keymaps) { -->
+    <!--             var headerValue = keymaps[headerName] -->
+    <!--             console.log(headerName, headerValue) -->
+    <!--             headers[index].innerHTML = headerValue -->
+    <!--           } -->
+    <!--         } -->
+    <!---->
+    <!--       }) -->
+    <!--   }; -->
+    <!-- </script> -->
+
+    <div class="container row">
+        <div class="cell-md-8">
+            <div id="pagination"></div>
+            <div id="table-info"></div>
+        </div>
+
+    </div>
+
+  </body>
+
+</html>
