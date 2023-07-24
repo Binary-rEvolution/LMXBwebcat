@@ -39,7 +39,6 @@ document.write(`
           <button type="button" class="hamburger menu-down"><span class="line"></span><span class="line"></span><span class="line"></span></button>
           <ul class="app-bar-menu order-2 order-lg-1">
             <li><a href="index.html">Home</a></li>
-            <li><a href="https://binary-revolution.github.io/HMXBwebcat/catalog.html">HMXB Catalogue</a></li>
             <li><a href="catalog.html">LMXB Catalogue</a></li>
             <li><a href="notes.html">Notes</a></li>
             <li><a href="downloads.html">Downloads</a></li>
@@ -47,6 +46,7 @@ document.write(`
           </ul>
 
           <div class="app-bar-container ml-auto order-1 order-lg-2">
+            <a href="https://binary-revolution.github.io/HMXBwebcat/index.html" class="app-bar-item">Switch to HMXB Catalogue &nbsp;&nbsp;<img src="./pictures/HMXBfavicon.ico"></a>
             <a href="about.html" class="app-bar-item">About<span class="va-middle ml-2"></span></a>
           </div>
         </div>
