@@ -69,7 +69,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(169.5448506692038,48.0367243709162, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -78,9 +78,9 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'red'}));
+        overlay.add(A.circle(169.544987,48.036835,6.11111107799742e-05, {color: 'red'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightblue'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'violet'}));
+        overlay.add(A.circle(169.54490529519057,48.036768508213505,0.00019776648733349644, {color: 'violet'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightgrey'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'green'}));
        
@@ -110,10 +110,10 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     -->
     <!-- add individual point markers
-        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
+        var marker1 = A.marker(169.5448506692038,48.0367243709162, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker2 = A.marker(169.544987,48.036835, {popupTitle: '2MASS', popupDesc: ''});
         var marker3 = A.marker(NaN,NaN, {popupTitle: 'XMM Newton', popupDesc: ''});
-        var marker4 = A.marker(NaN,NaN, {popupTitle: 'Chandra', popupDesc: ''});
+        var marker4 = A.marker(169.54490529519057,48.036768508213505, {popupTitle: 'Chandra', popupDesc: ''});
         var marker5 = A.marker(NaN,NaN, {popupTitle: 'Swift', popupDesc: ''});
         var marker6 = A.marker(NaN,NaN, {popupTitle: 'INTEGRAL', popupDesc: ''});
         
