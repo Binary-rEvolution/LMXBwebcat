@@ -69,7 +69,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(247.11189828777876,-50.37769576558009, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -80,9 +80,9 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'red'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightblue'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'violet'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightgrey'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'green'}));
+        overlay.add(A.circle(247.11185899430473,-50.377697928855255,0.00019825425547406026, {color: 'violet'}));
+        overlay.add(A.circle(247.11333,-50.37731,0.001055555542310079, {color: 'lightgrey'}));
+        overlay.add(A.circle(247.112,-50.378,0.04366666475931803, {color: 'green'}));
        
         
         });
@@ -110,12 +110,12 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     -->
     <!-- add individual point markers
-        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(247.11189828777876,-50.37769576558009, {popupTitle: 'Gaia', popupDesc: ''});
         var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
         var marker3 = A.marker(NaN,NaN, {popupTitle: 'XMM Newton', popupDesc: ''});
-        var marker4 = A.marker(NaN,NaN, {popupTitle: 'Chandra', popupDesc: ''});
-        var marker5 = A.marker(NaN,NaN, {popupTitle: 'Swift', popupDesc: ''});
-        var marker6 = A.marker(NaN,NaN, {popupTitle: 'INTEGRAL', popupDesc: ''});
+        var marker4 = A.marker(247.11185899430473,-50.377697928855255, {popupTitle: 'Chandra', popupDesc: ''});
+        var marker5 = A.marker(247.11333,-50.37731, {popupTitle: 'Swift', popupDesc: ''});
+        var marker6 = A.marker(247.112,-50.378, {popupTitle: 'INTEGRAL', popupDesc: ''});
         
         
         var markerLayer = A.catalog();
