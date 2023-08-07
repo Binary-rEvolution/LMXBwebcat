@@ -63,13 +63,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "255.30407752834031 -30.11523469456288"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "255.3023863609817 -30.106238294750735"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(255.3047899854997,-30.115603218962107, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(255.30407752834031,-30.11523469456288, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -110,7 +110,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     -->
     <!-- add individual point markers
-        var marker1 = A.marker(255.3047899854997,-30.115603218962107, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(255.30407752834031,-30.11523469456288, {popupTitle: 'Gaia', popupDesc: ''});
         var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
         var marker3 = A.marker(NaN,NaN, {popupTitle: 'XMM Newton', popupDesc: ''});
         var marker4 = A.marker(255.30458897798508,-30.115393266004627, {popupTitle: 'Chandra', popupDesc: ''});

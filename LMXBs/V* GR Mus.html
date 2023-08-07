@@ -78,7 +78,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(194.4005,-69.291771,9.722222056653765e-05, {color: 'red'}));
+        overlay.add(A.circle(NaN,NaN,NaN, {color: 'red'}));
         overlay.add(A.circle(194.405111,-69.288702,0.00011980638888888889, {color: 'lightblue'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'violet'}));
         overlay.add(A.circle(194.40571,-69.28873,0.0009722222222222222, {color: 'lightgrey'}));
@@ -111,7 +111,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     -->
     <!-- add individual point markers
         var marker1 = A.marker(194.40486325459628,-69.28861610822328, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(194.4005,-69.291771, {popupTitle: '2MASS', popupDesc: ''});
+        var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
         var marker3 = A.marker(194.405111,-69.288702, {popupTitle: 'XMM Newton', popupDesc: ''});
         var marker4 = A.marker(NaN,NaN, {popupTitle: 'Chandra', popupDesc: ''});
         var marker5 = A.marker(194.40571,-69.28873, {popupTitle: 'Swift', popupDesc: ''});
