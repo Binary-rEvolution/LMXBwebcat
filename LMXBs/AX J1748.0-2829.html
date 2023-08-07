@@ -79,12 +79,17 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(266.816189,-28.404774,2.2222221725516848e-05, {color: 'red'}));
-        overlay.add(A.circle(266.81622,-28.404487,0.00016558833333333333, {color: 'lightblue'}));
-        overlay.add(A.circle(266.81611319367585,-28.404613274848405,0.0002107475864184481, {color: 'violet'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightgrey'}));
-        overlay.add(A.circle(266.829,-28.4,0.013333333532015483, {color: 'green'}));
-       
+        overlay.add(A.circle(266.8160784018687,-28.40462464997552,1.948432955476973e-07, {color: 'white'}));
+overlay.add(A.circle(267.0,-28.483333333333334,0.0002777777777777778, {color: 'red'}));
+overlay.add(A.circle(266.829,-28.4,0.013333333532015483, {color: 'green'}));
+overlay.add(A.circle(267.0211,-28.4738,0.00016666666666666666, {color: 'orange'}));
+overlay.add(A.circle(266.81622,-28.404487,0.00016558833333333333, {color: 'lightblue'}));
+overlay.add(A.circle(266.81611319367585,-28.404613274848405,0.0002107475864184481, {color: 'violet'}));
+overlay.add(A.circle(266.816189,-28.404774,2.2222221725516848e-05, {color: 'red'}));
+overlay.add(A.circle(266.8160784018687,-28.40462464997552,1.948432955476973e-07, {color: 'blue'}));
+
+        
+
         
         });
 </script>
@@ -97,32 +102,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     
     
-    <!-- Old .pdf field of view
-    
-    <div class="container" style="width:40vw;float:right;margin:10px 10px">
-        <embed
-            src="../FoV/AX J1748.0-2829_FoV.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            type="application/pdf"
-            frameBorder="0"
-            scrolling="auto"
-            height="500px"
-            width="700px"
-        ></embed>
-    </div>
-    -->
-    <!-- add individual point markers
-        var marker1 = A.marker(266.8160784018687,-28.40462464997552, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(266.816189,-28.404774, {popupTitle: '2MASS', popupDesc: ''});
-        var marker3 = A.marker(266.81622,-28.404487, {popupTitle: 'XMM Newton', popupDesc: ''});
-        var marker4 = A.marker(266.81611319367585,-28.404613274848405, {popupTitle: 'Chandra', popupDesc: ''});
-        var marker5 = A.marker(NaN,NaN, {popupTitle: 'Swift', popupDesc: ''});
-        var marker6 = A.marker(266.829,-28.4, {popupTitle: 'INTEGRAL', popupDesc: ''});
-        
-        
-        var markerLayer = A.catalog();
-aladin.addCatalog(markerLayer);
-markerLayer.addSources([marker1,marker2,marker3,marker4,marker5,marker6])
-        -->
+
     
     <div class="container" style="width:40vw;float:right" align="left" >
       <table class="styled-table" data-role="table" data-rows="-1" data-show-rows-steps=false data-show-search=false data-source="../CTP_data/AX J1748.0-2829.json">
