@@ -79,12 +79,21 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'red'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightblue'}));
-        overlay.add(A.circle(322.49217056836517,12.167285462646687,0.00019719805588546663, {color: 'violet'}));
-        overlay.add(A.circle(322.49358,12.16746,0.0009722222222222222, {color: 'lightgrey'}));
-        overlay.add(A.circle(322.493,12.167,0.05033333301544189, {color: 'green'}));
-       
+        overlay.add(A.circle(322.49301185824214,12.167647747006919,5.011933379703098e-07, {color: 'white'}));
+overlay.add(A.circle(322.4920833333333,12.167222222222222,0.00016666666666666666, {color: 'red'}));
+overlay.add(A.circle(322.4742,12.1999,0.06286116696433307, {color: 'black'}));
+overlay.add(A.circle(322.493,12.167,0.05033333301544189, {color: 'green'}));
+overlay.add(A.circle(322.4937,12.1702,0.003611111111111111, {color: 'grey'}));
+overlay.add(A.circle(322.4824,12.1439,0.088192, {color: 'lime'}));
+overlay.add(A.circle(322.512,12.176,0.026666667064030966, {color: 'cyan'}));
+overlay.add(A.circle(322.4919,12.16739,NaN, {color: 'orange'}));
+overlay.add(A.circle(322.6542,12.2404,0.056941005637486046, {color: 'black'}));
+overlay.add(A.circle(322.49358,12.16746,0.0009722222222222222, {color: 'lightgrey'}));
+overlay.add(A.circle(322.49217056836517,12.167285462646687,0.00019719805588546663, {color: 'violet'}));
+overlay.add(A.circle(322.49185266761066,12.167218767737484,1.1627050240834555e-06, {color: 'blue'}));
+
+        
+
         
         });
 </script>
@@ -97,32 +106,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     
     
-    <!-- Old .pdf field of view
-    
-    <div class="container" style="width:40vw;float:right;margin:10px 10px">
-        <embed
-            src="../FoV/CXOU J212958.1+121002_FoV.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            type="application/pdf"
-            frameBorder="0"
-            scrolling="auto"
-            height="500px"
-            width="700px"
-        ></embed>
-    </div>
-    -->
-    <!-- add individual point markers
-        var marker1 = A.marker(322.49185266761066,12.167218767737484, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
-        var marker3 = A.marker(NaN,NaN, {popupTitle: 'XMM Newton', popupDesc: ''});
-        var marker4 = A.marker(322.49217056836517,12.167285462646687, {popupTitle: 'Chandra', popupDesc: ''});
-        var marker5 = A.marker(322.49358,12.16746, {popupTitle: 'Swift', popupDesc: ''});
-        var marker6 = A.marker(322.493,12.167, {popupTitle: 'INTEGRAL', popupDesc: ''});
-        
-        
-        var markerLayer = A.catalog();
-aladin.addCatalog(markerLayer);
-markerLayer.addSources([marker1,marker2,marker3,marker4,marker5,marker6])
-        -->
+
     
     <div class="container" style="width:40vw;float:right" align="left" >
       <table class="styled-table" data-role="table" data-rows="-1" data-show-rows-steps=false data-show-search=false data-source="../CTP_data/CXOU J212958.1+121002.json">

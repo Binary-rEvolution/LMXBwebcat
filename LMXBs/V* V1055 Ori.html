@@ -79,12 +79,18 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'red'}));
-        overlay.add(A.circle(94.278938,9.132674,0.0005312802777777777, {color: 'lightblue'}));
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'violet'}));
-        overlay.add(A.circle(94.27572,9.13052,0.001055555542310079, {color: 'lightgrey'}));
-        overlay.add(A.circle(94.28,9.137,0.007499999801317851, {color: 'green'}));
-       
+        overlay.add(A.circle(94.27952049166454,9.132330462966962,4.0016509592533116e-08, {color: 'white'}));
+overlay.add(A.circle(94.28083333333332,9.136666666666667,0.0016666666666666668, {color: 'red'}));
+overlay.add(A.circle(94.2753,9.1409,0.0, {color: 'black'}));
+overlay.add(A.circle(94.28,9.137,0.007499999801317851, {color: 'green'}));
+overlay.add(A.circle(94.282,9.125,0.026666667064030966, {color: 'cyan'}));
+overlay.add(A.circle(94.27572,9.13052,0.001055555542310079, {color: 'lightgrey'}));
+overlay.add(A.circle(94.278938,9.132674,0.0005312802777777777, {color: 'lightblue'}));
+overlay.add(A.circle(94.2807,9.1371,4.638888888888889e-08, {color: 'orange'}));
+overlay.add(A.circle(94.27952049166454,9.132330462966962,4.0016509592533116e-08, {color: 'blue'}));
+
+        
+
         
         });
 </script>
@@ -97,32 +103,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     
     
-    <!-- Old .pdf field of view
-    
-    <div class="container" style="width:40vw;float:right;margin:10px 10px">
-        <embed
-            src="../FoV/V* V1055 Ori_FoV.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            type="application/pdf"
-            frameBorder="0"
-            scrolling="auto"
-            height="500px"
-            width="700px"
-        ></embed>
-    </div>
-    -->
-    <!-- add individual point markers
-        var marker1 = A.marker(94.27952049166454,9.132330462966962, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
-        var marker3 = A.marker(94.278938,9.132674, {popupTitle: 'XMM Newton', popupDesc: ''});
-        var marker4 = A.marker(NaN,NaN, {popupTitle: 'Chandra', popupDesc: ''});
-        var marker5 = A.marker(94.27572,9.13052, {popupTitle: 'Swift', popupDesc: ''});
-        var marker6 = A.marker(94.28,9.137, {popupTitle: 'INTEGRAL', popupDesc: ''});
-        
-        
-        var markerLayer = A.catalog();
-aladin.addCatalog(markerLayer);
-markerLayer.addSources([marker1,marker2,marker3,marker4,marker5,marker6])
-        -->
+
     
     <div class="container" style="width:40vw;float:right" align="left" >
       <table class="styled-table" data-role="table" data-rows="-1" data-show-rows-steps=false data-show-search=false data-source="../CTP_data/V* V1055 Ori.json">
