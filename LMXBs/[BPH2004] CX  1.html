@@ -63,13 +63,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "245.8921169 -26.52598812"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "245.8921168911989 -26.525988121153727"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(245.8921168911989,-26.525988121153727, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(245.89224038491466,-26.526391915245345, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -78,7 +78,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(NaN,NaN,NaN, {color: 'red'}));
+        overlay.add(A.circle(245.892258,-26.526016,2.777777819169892e-05, {color: 'red'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'lightblue'}));
         overlay.add(A.circle(245.8922273516389,-26.526326767409238,0.00019741602497977108, {color: 'violet'}));
         overlay.add(A.circle(245.8932,-26.52615,0.0011666666136847601, {color: 'lightgrey'}));
@@ -110,8 +110,8 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     -->
     <!-- add individual point markers
-        var marker1 = A.marker(245.8921168911989,-26.525988121153727, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(NaN,NaN, {popupTitle: '2MASS', popupDesc: ''});
+        var marker1 = A.marker(245.89224038491466,-26.526391915245345, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker2 = A.marker(245.892258,-26.526016, {popupTitle: '2MASS', popupDesc: ''});
         var marker3 = A.marker(NaN,NaN, {popupTitle: 'XMM Newton', popupDesc: ''});
         var marker4 = A.marker(245.8922273516389,-26.526326767409238, {popupTitle: 'Chandra', popupDesc: ''});
         var marker5 = A.marker(245.8932,-26.52615, {popupTitle: 'Swift', popupDesc: ''});
