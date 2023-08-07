@@ -63,13 +63,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "259.6002273232174 -40.49304636526382"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "259.4165135475064 -40.36778882193365"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(259.4165135475064,-40.36778882193365, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -78,10 +78,10 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(259.598841,-40.493637,1.6666666294137637e-05, {color: 'red'}));
-        overlay.add(A.circle(259.600768,-40.492322,0.00014032, {color: 'lightblue'}));
-        overlay.add(A.circle(259.6006261560806,-40.49254490480462,0.00019730152886785623, {color: 'violet'}));
-        overlay.add(A.circle(259.60026,-40.49275,0.0003888888822661506, {color: 'lightgrey'}));
+        overlay.add(A.circle(259.418276,-40.368511,1.6666666294137637e-05, {color: 'red'}));
+        overlay.add(A.circle(259.39275,-40.376038,0.0004909738888888889, {color: 'lightblue'}));
+        overlay.add(A.circle(259.4165288373699,-40.367903086799835,0.003573387793438915, {color: 'violet'}));
+        overlay.add(A.circle(259.42604,-40.36098,0.0009166666534211901, {color: 'lightgrey'}));
         overlay.add(A.circle(NaN,NaN,NaN, {color: 'green'}));
        
         
@@ -110,11 +110,11 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
     </div>
     -->
     <!-- add individual point markers
-        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
-        var marker2 = A.marker(259.598841,-40.493637, {popupTitle: '2MASS', popupDesc: ''});
-        var marker3 = A.marker(259.600768,-40.492322, {popupTitle: 'XMM Newton', popupDesc: ''});
-        var marker4 = A.marker(259.6006261560806,-40.49254490480462, {popupTitle: 'Chandra', popupDesc: ''});
-        var marker5 = A.marker(259.60026,-40.49275, {popupTitle: 'Swift', popupDesc: ''});
+        var marker1 = A.marker(259.4165135475064,-40.36778882193365, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker2 = A.marker(259.418276,-40.368511, {popupTitle: '2MASS', popupDesc: ''});
+        var marker3 = A.marker(259.39275,-40.376038, {popupTitle: 'XMM Newton', popupDesc: ''});
+        var marker4 = A.marker(259.4165288373699,-40.367903086799835, {popupTitle: 'Chandra', popupDesc: ''});
+        var marker5 = A.marker(259.42604,-40.36098, {popupTitle: 'Swift', popupDesc: ''});
         var marker6 = A.marker(NaN,NaN, {popupTitle: 'INTEGRAL', popupDesc: ''});
         
         

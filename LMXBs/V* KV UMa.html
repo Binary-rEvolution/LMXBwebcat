@@ -63,7 +63,7 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "169.5448506692038 48.0367243709162"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "169.545 48.0368"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
