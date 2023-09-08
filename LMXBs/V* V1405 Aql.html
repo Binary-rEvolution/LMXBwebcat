@@ -64,7 +64,7 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "289.70371 -5.23303"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "289.70469424354434 -5.232551541773871"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
@@ -79,7 +79,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(289.70371,-5.23303,0.0010833333598242866, {color: 'white'}));
+        overlay.add(A.circle(289.70469424354434,-5.232551541773871,1.9334576196140717e-07, {color: 'white'}));
 overlay.add(A.circle(289.6995833333333,-5.237222222222222,0.0016666666666666668, {color: 'red'}));
 overlay.add(A.circle(289.7051,-5.2376,0.0, {color: 'black'}));
 overlay.add(A.circle(289.7051,-5.2376,0.0, {color: 'black'}));

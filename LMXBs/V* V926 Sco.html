@@ -35,7 +35,7 @@
         <h1>
         <b>V* V926 Sco</b><br><br>
         </h1>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/1ES 1735-26.9">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/[JBN2011] 154">Next</a>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/[JBN2011] 154">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/4U 1735-28">Next</a>
     </div>
     
     
@@ -70,7 +70,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(264.7426383954516,-44.45022771251375, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -89,7 +89,6 @@ overlay.add(A.circle(264.724,-44.467,0.026666667064030966, {color: 'cyan'}));
 overlay.add(A.circle(264.74247,-44.45046,0.0008611110846201579, {color: 'lightgrey'}));
 overlay.add(A.circle(264.743145,-44.449839,0.00018287305555555555, {color: 'lightblue'}));
 overlay.add(A.circle(264.7427,-44.4502,2.613888888888889e-08, {color: 'orange'}));
-overlay.add(A.circle(264.7426383954516,-44.45022771251375,2.6137305216656793e-08, {color: 'blue'}));
 
         
 
