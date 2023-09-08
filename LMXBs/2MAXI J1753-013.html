@@ -70,7 +70,7 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(268.3678788865732,-1.4517536434394762, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -84,7 +84,6 @@ overlay.add(A.circle(35.516999999999925,-1.4517,0.0002777777777777778, {color: '
 overlay.add(A.circle(268.3679,-1.4517,1.7277777777777776e-08, {color: 'orange'}));
 overlay.add(A.circle(268.3685,-1.45287,0.0009444444709353977, {color: 'lightgrey'}));
 overlay.add(A.circle(268.367473,-1.45136,0.00037326972222222226, {color: 'lightblue'}));
-overlay.add(A.circle(268.3678788865732,-1.4517536434394762,1.7283258752690424e-08, {color: 'blue'}));
 
         
 

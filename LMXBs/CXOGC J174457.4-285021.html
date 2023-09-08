@@ -35,7 +35,7 @@
         <h1>
         <b>CXOGC J174457.4-285021</b><br><br>
         </h1>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/2XMM J174502.1-285450">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/CXOGC J174540.0-290031">Next</a>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/MXB 1743-29">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/KS 1741-293">Next</a>
     </div>
     
     
@@ -64,7 +64,7 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "266.409467 -28.996956"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "266.2391666666666 -28.83888888888889"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
@@ -79,14 +79,13 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(266.409467,-28.996956,6.944444444444444e-05, {color: 'white'}));
+        overlay.add(A.circle(266.2391666666666,-28.83888888888889,0.00016666666666666666, {color: 'white'}));
 overlay.add(A.circle(266.2391666666666,-28.83888888888889,0.00016666666666666666, {color: 'red'}));
 overlay.add(A.circle(266.4147,-28.997,0.006352, {color: 'lime'}));
 overlay.add(A.circle(266.41511,-28.99261,0.0022777777247958713, {color: 'lightgrey'}));
 overlay.add(A.circle(266.408629,-28.997231,0.0007763691666666667, {color: 'lightblue'}));
 overlay.add(A.circle(266.4098581320701,-28.99853785190758,0.00020986200760941682, {color: 'violet'}));
 overlay.add(A.circle(266.2393892,-28.8391059,NaN, {color: 'orange'}));
-overlay.add(A.circle(266.409467,-28.996956,6.944444444444444e-05, {color: 'red'}));
 
         
 
