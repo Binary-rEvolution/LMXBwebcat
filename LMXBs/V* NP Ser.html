@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "274.0058035972191 -14.036598833320399"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "274.00749999999994 -14.036305555555556"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(274.0058035972191,-14.036598833320399, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,16 +90,15 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(274.0058035972191,-14.036598833320399,1.805973549683889e-08, {color: 'white'}));
-overlay.add(A.circle(274.00499999999994,-14.036944444444444,0.0016666666666666668, {color: 'red'}));
+        overlay.add(A.circle(274.00499999999994,-14.036944444444444,0.0016666666666666668, {color: 'red'}));
 overlay.add(A.circle(274.0002,-14.0323,0.0, {color: 'black'}));
 overlay.add(A.circle(274.0102,-14.0322,0.0, {color: 'black'}));
 overlay.add(A.circle(274.006,-14.036,0.0031666666269302367, {color: 'green'}));
 overlay.add(A.circle(274.0067,-14.036,0.003611111111111111, {color: 'grey'}));
 overlay.add(A.circle(274.019,-14.015,0.026666667064030966, {color: 'cyan'}));
-overlay.add(A.circle(274.0058,-14.0363,NaN, {color: 'orange'}));
-overlay.add(A.circle(274.005808,-14.036533,1.9444444527228672e-05, {color: 'red'}));
-overlay.add(A.circle(274.0058035972191,-14.036598833320399,1.805973549683889e-08, {color: 'blue'}));
+overlay.add(A.circle(274.00749999999994,-14.036305555555556,0.00019444444444444443, {color: 'orange'}));
+overlay.add(A.circle(274.00749999999994,-14.036305555555556,0.00019444444444444443, {color: 'violet'}));
+overlay.add(A.circle(274.00749999999994,-14.036305555555556,0.00019444444444444443, {color: 'white'}));
 
         
 
@@ -136,7 +135,7 @@ overlay.add(A.circle(274.0058035972191,-14.036598833320399,1.805973549683889e-08
     <h3><b>Accretor</b></h3>
     Type: NS  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1997ApJ...490L.157W/abstract" target="_blank" rel="noreferrer noopener">1997ApJ...490L.157W</a>]</font><br>
     Mx: <br>
-    Spin Period: 0.00341$\pm$8.7e-05 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1997ApJ...490L.157W/abstract" target="_blank" rel="noreferrer noopener">1997ApJ...490L.157W</a>]</font><br>
+    Spin Period: 0.003407$\pm$8.7e-05 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1997ApJ...490L.157W/abstract" target="_blank" rel="noreferrer noopener">1997ApJ...490L.157W</a>]</font><br>
     X-ray Bursts: yes  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2008ApJS..179..360G/abstract" target="_blank" rel="noreferrer noopener">2008ApJS..179..360G</a>]</font><br><br>
 
     
