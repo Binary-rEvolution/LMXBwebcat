@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "11.059950001128675 33.293635862655016"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "11.209999999999997 33.021388888888"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(11.059950001128675,33.293635862655016, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,10 +90,9 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(11.059950001128675,33.293635862655016,8.821276326974234e-08, {color: 'white'}));
-overlay.add(A.circle(11.21,33.0214,NaN, {color: 'orange'}));
-overlay.add(A.circle(11.078094,33.294411,1.9444444527228672e-05, {color: 'red'}));
-overlay.add(A.circle(11.059950001128675,33.293635862655016,8.821276326974234e-08, {color: 'blue'}));
+        overlay.add(A.circle(11.209999999999997,33.021388888888,0.0005555555555555556, {color: 'white'}));
+overlay.add(A.circle(11.209999999999997,33.021388888888,0.0005555555555555556, {color: 'orange'}));
+overlay.add(A.circle(11.0645,33.2935,0.07796967821763513, {color: 'black'}));
 
         
 
@@ -119,7 +118,7 @@ overlay.add(A.circle(11.059950001128675,33.293635862655016,8.821276326974234e-08
     <div class="container" style="width:25vw;float:right" align="left" >
     <br>
     <h3><b>Binary</b></h3>
-    Orbital Period: 278.0$\pm$16.8 hr <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1978MNRAS.183P..35W/abstract" target="_blank" rel="noreferrer noopener">1978MNRAS.183P..35W</a>]</font><br>
+    Orbital Period: 278.4$\pm$16.8 hr <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1978MNRAS.183P..35W/abstract" target="_blank" rel="noreferrer noopener">1978MNRAS.183P..35W</a>]</font><br>
     Eccentricity:  <br>
     Radial Velocity: <br><br>
     

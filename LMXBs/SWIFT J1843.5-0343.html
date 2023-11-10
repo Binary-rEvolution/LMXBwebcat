@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "280.8745971846659 -3.7167471163273427"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "280.89527 -3.71572"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(280.8745971846659,-3.7167471163273427, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,10 +90,10 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(280.8745971846659,-3.7167471163273427,1.2218503488434686e-07, {color: 'white'}));
-overlay.add(A.circle(280.875,-3.716666666666667,0.00038888888888888887, {color: 'red'}));
+        overlay.add(A.circle(280.875,-3.716666666666667,0.00038888888888888887, {color: 'red'}));
 overlay.add(A.circle(280.8948,-3.7157,0.00075, {color: 'orange'}));
-overlay.add(A.circle(280.8745971846659,-3.7167471163273427,1.2218503488434686e-07, {color: 'blue'}));
+overlay.add(A.circle(280.89527,-3.71572,0.00044444445106718274, {color: 'lightgrey'}));
+overlay.add(A.circle(280.89527,-3.71572,0.00044444445106718274, {color: 'white'}));
 
         
 
@@ -130,7 +130,7 @@ overlay.add(A.circle(280.8745971846659,-3.7167471163273427,1.2218503488434686e-0
     <h3><b>Accretor</b></h3>
     Type: NS  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2011ATel.3121....1S/abstract" target="_blank" rel="noreferrer noopener">2011ATel.3121....1S</a>]</font><br>
     Mx: <br>
-    Spin Period: 42.5$\pm$0.1 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2011ATel.3121....1S/abstract" target="_blank" rel="noreferrer noopener">2011ATel.3121....1S</a>]</font><br>
+    Spin Period: 42.5 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2011ATel.3121....1S/abstract" target="_blank" rel="noreferrer noopener">2011ATel.3121....1S</a>]</font><br>
     X-ray Bursts: <br><br>
 
     

@@ -32,7 +32,7 @@
     
     <div class="container" align="center">
         <br>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/[KRL2007b] 294">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/MXB 1742-29">Next</a><br>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/MXB 1742-29">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/AX J1755.7-2818">Next</a><br>
         <h1>
         <b>INTREF   866  / XTE J1755-324</b>
         
@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "268.59244314870176 -32.601936137289336"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "268.8692 -32.4775"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(268.59244314870176,-32.601936137289336, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,10 +90,8 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(268.59244314870176,-32.601936137289336,3.3934302628040316e-08, {color: 'white'}));
-overlay.add(A.circle(268.8692,-32.4775,NaN, {color: 'orange'}));
-overlay.add(A.circle(268.592631,-32.600437,2.2222221725516848e-05, {color: 'red'}));
-overlay.add(A.circle(268.59244314870176,-32.601936137289336,3.3934302628040316e-08, {color: 'blue'}));
+        overlay.add(A.circle(268.8692,-32.4775,0.016666666666666666, {color: 'orange'}));
+overlay.add(A.circle(268.8692,-32.4775,0.016666666666666666, {color: 'white'}));
 
         
 

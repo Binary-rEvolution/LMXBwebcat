@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "330.2890148821566 60.56914494787347"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "330.4756370567424 60.63593611744314"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(330.2890148821566,60.56914494787347, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(330.4756370567424,60.63593611744314, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,14 +90,14 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(330.2890148821566,60.56914494787347,2.570649764190118e-09, {color: 'white'}));
+        overlay.add(A.circle(330.4756370567424,60.63593611744314,9.936594093839329e-09, {color: 'white'}));
 overlay.add(A.circle(330.24999999999994,60.56666666666667,0.0002777777777777778, {color: 'red'}));
 overlay.add(A.circle(330.361,60.567,0.08916666507720947, {color: 'green'}));
-overlay.add(A.circle(330.361,60.567,NaN, {color: 'orange'}));
-overlay.add(A.circle(330.28753,60.56796,0.0015555555290646024, {color: 'lightgrey'}));
-overlay.add(A.circle(330.28888515043013,60.569145120496145,0.0002512564596749837, {color: 'violet'}));
-overlay.add(A.circle(330.288923,60.569115,1.6666666294137637e-05, {color: 'red'}));
-overlay.add(A.circle(330.2890148821566,60.56914494787347,2.570649764190118e-09, {color: 'blue'}));
+overlay.add(A.circle(330.4756666666666,60.63596666666667,0.0002777777777777778, {color: 'orange'}));
+overlay.add(A.circle(330.47432,60.63477,0.0009999999735090467, {color: 'lightgrey'}));
+overlay.add(A.circle(330.4753281068322,60.635889761897076,0.00038702247751249964, {color: 'violet'}));
+overlay.add(A.circle(330.475672,60.635967,1.9444444527228672e-05, {color: 'red'}));
+overlay.add(A.circle(330.4756370567424,60.63593611744314,9.936594093839329e-09, {color: 'blue'}));
 
         
 
@@ -128,7 +128,7 @@ overlay.add(A.circle(330.2890148821566,60.56914494787347,2.570649764190118e-09, 
     Radial Velocity: <br><br>
     
     <h3><b>Donor</b></h3>
-    Spectral Type: <br>
+    Spectral Type: G III-IV  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...761....4O/abstract" target="_blank" rel="noreferrer noopener">2012ApJ...761....4O</a>]</font><br>
     Mo: <br><br>
     
     <h3><b>Accretor</b></h3>

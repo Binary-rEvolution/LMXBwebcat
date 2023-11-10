@@ -32,7 +32,7 @@
     
     <div class="container" align="center">
         <br>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/AX J1735.8-3207">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/CXOGlb J173616.9-444409">Next</a><br>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/1RXS J173546.9-302859">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/CXOGlb J173616.9-444409">Next</a><br>
         <h1>
         <b>RX J1735.9-2726  / GRO J1735-27</b>
         
@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "264.00924146620093 -27.42813802673524"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "264.0083333333333 -27.428194444444447"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(264.00924146620093,-27.42813802673524, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,11 +90,9 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(264.00924146620093,-27.42813802673524,1.697901056872474e-07, {color: 'white'}));
-overlay.add(A.circle(264.0083333333333,-27.428055555555556,0.0016666666666666668, {color: 'red'}));
-overlay.add(A.circle(264.0083,-27.4282,0.0019444444444444444, {color: 'orange'}));
-overlay.add(A.circle(264.009255,-27.426514,1.6666666294137637e-05, {color: 'red'}));
-overlay.add(A.circle(264.00924146620093,-27.42813802673524,1.697901056872474e-07, {color: 'blue'}));
+        overlay.add(A.circle(264.0083333333333,-27.428055555555556,0.0016666666666666668, {color: 'red'}));
+overlay.add(A.circle(264.0083333333333,-27.428194444444447,0.0019444444444444444, {color: 'orange'}));
+overlay.add(A.circle(264.0083333333333,-27.428194444444447,0.0019444444444444444, {color: 'white'}));
 
         
 
@@ -131,7 +129,7 @@ overlay.add(A.circle(264.00924146620093,-27.42813802673524,1.697901056872474e-07
     <h3><b>Accretor</b></h3>
     Type: NS  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1995IAUC.6207....3W/abstract" target="_blank" rel="noreferrer noopener">1995IAUC.6207....3W</a>]</font><br>
     Mx: <br>
-    Spin Period: 4.46$\pm$2.5e-05 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1995IAUC.6207....3W/abstract" target="_blank" rel="noreferrer noopener">1995IAUC.6207....3W</a>]</font><br>
+    Spin Period: 4.45565$\pm$2.5e-05 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1995IAUC.6207....3W/abstract" target="_blank" rel="noreferrer noopener">1995IAUC.6207....3W</a>]</font><br>
     X-ray Bursts: <br><br>
 
     

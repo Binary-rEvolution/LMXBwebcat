@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "270.3857440912706 -20.524669545527907"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "270.3842916666666 -20.529952777777776"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(270.3857440912706,-20.524669545527907, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,15 +90,14 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(270.3857440912706,-20.524669545527907,1.7252143886354237e-07, {color: 'white'}));
+        overlay.add(A.circle(270.3842916666666,-20.529952777777776,0.00016666666666666666, {color: 'white'}));
 overlay.add(A.circle(270.3845833333333,-20.525555555555556,0.0016666666666666668, {color: 'red'}));
 overlay.add(A.circle(270.385,-20.5299,0.0, {color: 'black'}));
 overlay.add(A.circle(270.385,-20.5299,0.0, {color: 'black'}));
 overlay.add(A.circle(270.385,-20.529,0.0038333334028720855, {color: 'green'}));
 overlay.add(A.circle(270.383,-20.52,0.026666667064030966, {color: 'cyan'}));
-overlay.add(A.circle(270.3846,-20.5289,NaN, {color: 'orange'}));
-overlay.add(A.circle(270.385742,-20.524643,3.05555553899871e-05, {color: 'red'}));
-overlay.add(A.circle(270.3857440912706,-20.524669545527907,1.7252143886354237e-07, {color: 'blue'}));
+overlay.add(A.circle(270.3842916666666,-20.529952777777776,0.00016666666666666666, {color: 'orange'}));
+overlay.add(A.circle(270.38440763174447,-20.530027199370913,0.0003409446466858475, {color: 'violet'}));
 
         
 

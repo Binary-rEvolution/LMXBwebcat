@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "207.0530784735142 -63.27491918977578"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "207.05366666666666 -63.27455555555555"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(207.0530784735142,-63.27491918977578, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,9 +90,8 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(207.0530784735142,-63.27491918977578,4.25029562579261e-07, {color: 'white'}));
-overlay.add(A.circle(207.0530785,-63.27491919,NaN, {color: 'orange'}));
-overlay.add(A.circle(207.0530784735142,-63.27491918977578,4.25029562579261e-07, {color: 'blue'}));
+        overlay.add(A.circle(207.05366666666666,-63.27455555555555,0.0002777777777777778, {color: 'white'}));
+overlay.add(A.circle(207.05366666666666,-63.27455555555555,0.0002777777777777778, {color: 'orange'}));
 
         
 
@@ -129,7 +128,7 @@ overlay.add(A.circle(207.0530784735142,-63.27491918977578,4.25029562579261e-07, 
     <h3><b>Accretor</b></h3>
     Type: BH  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2019ATel12447....1S/abstract" target="_blank" rel="noreferrer noopener">2019ATel12447....1S</a>]</font><br>
     Mx: 14.8$\pm$0.9 M$_{\odot}$ <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2023A&A...669A..57T/abstract" target="_blank" rel="noreferrer noopener">2023A&A...669A..57T</a>]</font><br>
-    Spin Period: <br>
+    Spin Period: 9.8 s <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2019ATel12434....1K/abstract" target="_blank" rel="noreferrer noopener">2019ATel12434....1K</a>]</font><br>
     X-ray Bursts: <br><br>
 
     

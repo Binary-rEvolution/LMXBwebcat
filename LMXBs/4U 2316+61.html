@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "350.1422142835545 62.29270576988563"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "350.1422 62.2927"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(350.1422142835545,62.29270576988563, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,10 +90,8 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(350.1422142835545,62.29270576988563,2.5883301099141443e-06, {color: 'white'}));
-overlay.add(A.circle(350.1422,62.2927,2.588888888888889e-06, {color: 'orange'}));
-overlay.add(A.circle(350.142131,62.292683,1.6666666294137637e-05, {color: 'red'}));
-overlay.add(A.circle(350.1422142835545,62.29270576988563,2.5883301099141443e-06, {color: 'blue'}));
+        overlay.add(A.circle(350.1422,62.2927,0.08333333333333333, {color: 'orange'}));
+overlay.add(A.circle(350.1422,62.2927,0.08333333333333333, {color: 'white'}));
 
         
 
