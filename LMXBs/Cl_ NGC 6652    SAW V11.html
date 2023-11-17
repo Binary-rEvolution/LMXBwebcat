@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class=" scrollbar-type-1 sb-cyan">
+
+  <head>
+    <title>Catalog of Low-mass X-ray Binaries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script>
+      window.on_page_functions = [];
+    </script>
+
+    <!-- Metro UI JS-->
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+    <!-- Latex imports -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+  </head>
+  
+  <body>
+
+  <script src="../banner_menu_LMXBs.js"></script>
+    
+    <div class="container" align="center">
+        <br>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/V_ QU TrA.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/V_ V1055 Ori.html">Next</a><br>
+        <h1>
+        <b>Cl_ NGC 6652    SAW V11  / CXOGlb J183544.5-325939</b>
+        
+        <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%253Daqp%20v%253D%2524fq_database%7D&fq_database=(database%253Aastronomy)&q=full%3A%22CXOGlb J183544.5%2D325939%22&sort=date desc%2C bibcode desc&p_=0" target="_blank" rel="noreferrer noopener">
+        <img src="https://binary-revolution.github.io/LMXBwebcat/pictures/ADS_logo.png" alt="ADS"/>
+        </a>
+        
+        <a href="http://simbad.cds.unistra.fr/simbad/sim-id?Ident=Cl* NGC 6652    SAW V11" target="_blank" rel="noreferrer noopener">
+        <img src="https://binary-revolution.github.io/LMXBwebcat/pictures/simbad_logo.png" alt="Simbad"/>
+        </a>
+        </h1>
+        <br>
+    </div>
+    
+    
+    
+    
+    <div class="container">
+    
+    <div class="container" style="width:21vw;float:left" align="left">
+    <br><br>
+    <!-- New Aladin Lite field of view -->
+    <!-- our code needs jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
+
+    <!-- Aladin Lite container at requested dimensions -->
+    <div id="aladin-lite-div" style="width:400px;height:400px;"></div>
+
+    <input id="DSS" type="radio" name="survey" value="P/DSS2/color"><label for="DSS">DSS color<label>
+    <input id="2MASS" type="radio" name="survey" value="P/2MASS/color"><label for="2MASS">2MASS<label>
+    <input id="allwise" type="radio" name="survey" value="P/allWISE/color"><label for="allwise">AllWISE<label>
+    <input id="glimpse" type="radio" name="survey" value="P/GLIMPSE360"><label for="glimpse">GLIMPSE 360<label>
+    <input id="xmm" type="radio" name="survey" value="ESAVO/P/XMM/EPIC-RGB"><label for="xmm">XMM<label>
+    <input id="chandra" type="radio" name="survey" value="cxc.harvard.edu/P/cda/hips/allsky/rgb"><label for="chandra">Chandra<label>
+
+    <!-- Aladin Lite JS code -->
+    <script type="text/javascript" src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js" charset="utf-8"></script>
+
+    <!-- Creation of Aladin Lite instance with initial parameters -->
+    <script type="text/javascript">
+        let aladin;
+        A.init.then(() => {
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "278.9351511763075 -32.99432475503991"});
+
+        $('input[name=survey]').change(function() {
+            aladin.setImageSurvey($(this).val());
+        });
+        
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
+        var markerLayer = A.catalog();
+        aladin.addCatalog(markerLayer);
+        markerLayer.addSources([marker1])
+        
+        
+        var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
+        aladin.addOverlay(overlay);
+        
+        overlay.add(A.circle(278.9351511763075,-32.99432475503991,6.101442442999946e-06, {color: 'white'}));
+overlay.add(A.circle(278.93541666666664,-32.994166666666665,0.00016666666666666666, {color: 'red'}));
+overlay.add(A.circle(278.933,-32.982,0.0064999997615814206, {color: 'green'}));
+overlay.add(A.circle(278.9337,-32.9885,0.003611111111111111, {color: 'grey'}));
+overlay.add(A.circle(278.9396,-32.971,0.030096, {color: 'lime'}));
+overlay.add(A.circle(278.926,-33.02,0.029999999205271403, {color: 'cyan'}));
+overlay.add(A.circle(278.9356,-32.994,NaN, {color: 'orange'}));
+overlay.add(A.circle(278.93568607916245,-32.994005641776624,0.00019728859771289437, {color: 'violet'}));
+overlay.add(A.circle(278.9351511763075,-32.99432475503991,6.101442442999946e-06, {color: 'blue'}));
+
+        
+
+        
+        });
+</script>
+    <br><br>
+    <font size="2">
+    This webpage is powered by <a href="https://aladin.u-strasbg.fr/AladinLite/doc/">Aladin Lite v3</a>.<br>
+    Aladin Lite is developed and maintained by Thomas Boch and Matthieu Baumann.
+    Contact at <a href="mailto:cds-question@unistra.fr">cds-question@unistra.fr</a>.
+    </font>
+    </div>
+    
+     
+    
+    
+    <div class="container" style="width:40vw;float:left" align="left" >
+      <table class="styled-table" data-role="table" data-rows="-1" data-show-rows-steps=false data-show-search=false data-source="../CTP_data/Cl_ NGC 6652    SAW V11.json">
+      </table>
+    </div>
+    
+    <div class="container" style="width:25vw;float:right" align="left" >
+    <br>
+    <h3><b>Binary</b></h3>
+    Orbital Period: 0.727$\pm$0.01 hr <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2000ApJ...530L..21D/abstract" target="_blank" rel="noreferrer noopener">2000ApJ...530L..21D</a>]</font><br>
+    Eccentricity:  <br>
+    Radial Velocity: <br><br>
+    
+    <h3><b>Donor</b></h3>
+    Spectral Type: GV  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4107P/abstract" target="_blank" rel="noreferrer noopener">2021MNRAS.506.4107P</a>]</font><br>
+    Mo: <br><br>
+    
+    <h3><b>Accretor</b></h3>
+    Type: NS  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4107P/abstract" target="_blank" rel="noreferrer noopener">2021MNRAS.506.4107P</a>]</font><br>
+    Mx: <br>
+    Spin Period: <br>
+    X-ray Bursts: <br><br>
+
+    
+    </div>
+
+  </body>
+
+</html>
