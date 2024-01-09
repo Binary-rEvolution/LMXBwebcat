@@ -32,7 +32,7 @@
     
     <div class="container" align="center">
         <br>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/V_ BW Ant.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/[KRL2007b] 291.html">Next</a><br>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/CXOGlb J174804.5-244641.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/IGR J17451-3022.html">Next</a><br>
         <h1>
         <b>XMMU 171433-292747 </b>
         
@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "258.6375729072795 -29.463356167454442"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "258.6370588121953 -29.463536371304013"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(278.9351511763075,-32.99432475503991, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,12 +90,12 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(258.6375729072795,-29.463356167454442,1.1981971561908724e-07, {color: 'white'}));
+        overlay.add(A.circle(258.6370588121953,-29.463536371304013,6.42433762550354e-08, {color: 'white'}));
 overlay.add(A.circle(258.5694,-29.4794,0.05051, {color: 'lime'}));
 overlay.add(A.circle(258.637052,-29.462737,0.0002231083333333333, {color: 'lightblue'}));
 overlay.add(A.circle(258.6373278064211,-29.463378315740545,0.00019776280149045206, {color: 'violet'}));
 overlay.add(A.circle(258.6375,-29.463055555555556,0.0002777777777777778, {color: 'orange'}));
-overlay.add(A.circle(258.6375729072795,-29.463356167454442,1.1981971561908724e-07, {color: 'blue'}));
+overlay.add(A.circle(258.6370588121953,-29.463536371304013,6.42433762550354e-08, {color: 'blue'}));
 
         
 

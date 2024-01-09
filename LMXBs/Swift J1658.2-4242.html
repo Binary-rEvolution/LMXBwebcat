@@ -32,7 +32,7 @@
     
     <div class="container" align="center">
         <br>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/XTE J1637-498.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/V_ V4634 Sgr.html">Next</a><br>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/IGR J16287-5021.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/[RTB2002] J174853.12-202127.0.html">Next</a><br>
         <h1>
         <b>Swift J1658.2-4242 </b>
         
@@ -75,7 +75,7 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "254.55286656220522 -42.69897375422123"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "254.553378 -42.698312"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
@@ -90,11 +90,9 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(254.55286656220522,-42.69897375422123,1.1815592646598817e-07, {color: 'white'}));
+        overlay.add(A.circle(254.553378,-42.698312,0.00025130333333333335, {color: 'white'}));
 overlay.add(A.circle(254.55211,-42.69846,0.0008333333333333333, {color: 'lightgrey'}));
 overlay.add(A.circle(254.553378,-42.698312,0.00025130333333333335, {color: 'lightblue'}));
-overlay.add(A.circle(254.552871,-42.698997,3.6111109786563447e-05, {color: 'red'}));
-overlay.add(A.circle(254.55286656220522,-42.69897375422123,1.1815592646598817e-07, {color: 'blue'}));
 
         
 
