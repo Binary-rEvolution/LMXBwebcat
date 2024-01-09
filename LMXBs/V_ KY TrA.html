@@ -32,7 +32,7 @@
     
     <div class="container" align="center">
         <br>
-        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/2XMM J164143.6+362758.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/[KRL2007b] 214.html">Next</a><br>
+        <a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/CXOU J173324.6-332321.html">Previous</a>&nbsp;&nbsp;<a href="https://binary-revolution.github.io/LMXBwebcat/LMXBs/4U 1701-407.html">Next</a><br>
         <h1>
         <b>V_ KY TrA  / TrA X-1</b>
         
@@ -75,13 +75,13 @@
     <script type="text/javascript">
         let aladin;
         A.init.then(() => {
-aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "232.0707 -61.8827"});
+aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target: "232.07054166666666 -61.88276388888889"});
 
         $('input[name=survey]').change(function() {
             aladin.setImageSurvey($(this).val());
         });
         
-        var marker1 = A.marker(330.4756370567424,60.63593611744314, {popupTitle: 'Gaia', popupDesc: ''});
+        var marker1 = A.marker(NaN,NaN, {popupTitle: 'Gaia', popupDesc: ''});
         var markerLayer = A.catalog();
         aladin.addCatalog(markerLayer);
         markerLayer.addSources([marker1])
@@ -90,9 +90,10 @@ aladin = A.aladin('#aladin-lite-div', {survey: "P/2MASS/color", fov:0.01, target
         var overlay = A.graphicOverlay({color: '#ee2345', lineWidth: 2});
         aladin.addOverlay(overlay);
         
-        overlay.add(A.circle(232.0707,-61.8827,8.333333333333333e-05, {color: 'white'}));
+        overlay.add(A.circle(232.07054166666666,-61.88276388888889,2.777777777777778e-05, {color: 'white'}));
 overlay.add(A.circle(232.07583333333332,-61.88194444444444,0.0016666666666666668, {color: 'red'}));
-overlay.add(A.circle(232.0707,-61.8827,8.333333333333333e-05, {color: 'orange'}));
+overlay.add(A.circle(232.07054166666666,-61.88276388888889,2.777777777777778e-05, {color: 'orange'}));
+overlay.add(A.circle(232.0673,-61.8832,0.0, {color: 'black'}));
 
         
 
@@ -118,17 +119,17 @@ overlay.add(A.circle(232.0707,-61.8827,8.333333333333333e-05, {color: 'orange'})
     <div class="container" style="width:25vw;float:right" align="left" >
     <br>
     <h3><b>Binary</b></h3>
-    Orbital Period: 15.0$\pm$-99.0 hr <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.3351Z/abstract" target="_blank" rel="noreferrer noopener">2015MNRAS.454.3351Z</a>]</font><br>
+    Orbital Period: 6.24$\pm$0.24 hr <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.5949Y/abstract" target="_blank" rel="noreferrer noopener">2024MNRAS.527.5949Y</a>]</font><br>
     Eccentricity:  <br>
     Radial Velocity: <br><br>
     
     <h3><b>Donor</b></h3>
-    Spectral Type: K0V  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.3351Z/abstract" target="_blank" rel="noreferrer noopener">2015MNRAS.454.3351Z</a>]</font><br>
-    Mo: <br><br>
+    Spectral Type: K2V  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.5949Y/abstract" target="_blank" rel="noreferrer noopener">2024MNRAS.527.5949Y</a>]</font><br>
+    Mo: 0.5$\pm$0.3 M$_{\odot}$ <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.5949Y/abstract" target="_blank" rel="noreferrer noopener">2024MNRAS.527.5949Y</a>]</font><br><br>
     
     <h3><b>Accretor</b></h3>
-    Type: BH  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/1992ApJ...392L..19B/abstract" target="_blank" rel="noreferrer noopener">1992ApJ...392L..19B</a>]</font><br>
-    Mx: <br>
+    Type: BH  <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.5949Y/abstract" target="_blank" rel="noreferrer noopener">2024MNRAS.527.5949Y</a>]</font><br>
+    Mx: 5.8$\pm$3.0 M$_{\odot}$ <font size=2>[<a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.5949Y/abstract" target="_blank" rel="noreferrer noopener">2024MNRAS.527.5949Y</a>]</font><br>
     Spin Period: <br>
     X-ray Bursts: <br><br>
 
